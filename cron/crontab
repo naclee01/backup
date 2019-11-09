@@ -1,0 +1,5 @@
+#job to run the tar script for automated backup
+0 0 * * 0 /path/to/script/tar.sh >> ~/tarLog 2>&1
+
+#run backup script
+0 * * * 0 /path/to/script/backup.sh >> ~/backupLog 2>&1
